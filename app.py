@@ -7,6 +7,8 @@ from dotenv import load_dotenv
 from langfuse.decorators import observe
 from langfuse.openai import OpenAI
 
+st.set_page_config(page_title="NaszGPT")
+
 model_pricings = {
     "gpt-4o": {
         "input_tokens": 5.00 / 1_000_000,  # per token
